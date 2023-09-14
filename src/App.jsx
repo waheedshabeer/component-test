@@ -38,7 +38,6 @@ export default function App() {
         <p>-</p>
         <DropDown message={"Set Time"} />
       </div>
-
       <textarea
         placeholder="Notes"
         className="text-center rounded-md bg-[#6D6D6D] py-2 text-sm h-[90px] "
