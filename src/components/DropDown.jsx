@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 export default function DropDown({ message }) {
-  const [showModal, setShowModal] = useState(false);
+  const [showDropDown, setShowDropDown] = useState(false);
   return (
     <div class="relative inline-block max-w-[150px] text-left">
       <div>
         <button
           type="button"
-          onClick={() => setShowModal(!showModal)}
+          onClick={() => setShowDropDown(!showDropDown)}
           class="inline-flex w-full justify-center gap-x-1.5 rounded-full bg-[#6D6D6D] text-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-[#6D6D6D]"
           id="menu-button"
           aria-expanded="true"
@@ -29,7 +29,7 @@ export default function DropDown({ message }) {
         </button>
       </div>
 
-      {showModal && (
+      {showDropDown && (
         <div
           class="absolute right-0 z-10 mt-2 w-56 origin-top-right
      rounded-md text-white bg-[#6D6D6D] shadow-lg ring-1 ring-black
